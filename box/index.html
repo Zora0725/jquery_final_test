@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【最終試煉】使用 jQuery 打造互動性網頁動畫效果 by Zora Lin</title>
+    <link rel="stylesheet" href="css/lightbox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <ul class="topbar">
+                <li class="fb-fans">
+                    <img src="img/facebookIcon.png" alt=""><a href="#">粉絲團</a>
+                </li>
+                <li class="twitter-follow">
+                    <img src="img/twitterIcon.png" alt=""><a href="#">追蹤我們</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <h1><a href="https://courses.hexschool.com/" target="_blank">Hex School</a></h1>
+             </div>
+                <ul class="menu">
+                    <li><a href="#">回首頁</a></li>
+                    <li><a class="dropdown" href="#">產品介紹</a>
+                        <ul class="dropopen">
+                        <li><a href="#">網頁設計課</a></li>
+                        <li><a href="#">Java直播班</a></li>
+                        <li><a href="#">後端課程</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+        </div>                  
+                <div class="banner">
+                    <h2>六角學院<br>
+                        讓您奠定良好的前端基礎</h2>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/toystory.jpeg" alt=""></div>
+                      <div class="swiper-slide"><img src="img/up.jpeg" alt=""></div>
+                      <div class="swiper-slide"><img src="img/walle.jpeg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                    <ul class="topic">
+                        <li class="html">
+                            <a href="img/html.png" data-lightbox="html5" data-title="html5">
+                                <img src="img/html.png" alt="html5">
+                            </a>
+                            <h3>Html 5 基礎教學</h3>
+                            <p>主流前端網站設計的基礎就在六角學院，在這裡不是填鴨式教學，而是透過實際的範例，瞭解咒確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                        </li>
+                        <li class="rwd">
+                            <a href="img/rwd.png" data-lightbox="rwd" data-title="rwd">
+                                <img src="img/rwd.png" alt="rwd">
+                            </a>
+                            <h3>響應式網站設計</h3>
+                            <p>響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>                  
+                        </li>
+                        <li class="jquery">
+                            <a href="img/jQuery.png" data-lightbox="jquery" data-title="jquery">
+                                <img src="img/jQuery.png" alt="jquery">
+                            </a>
+                            <h3>jQuery 實戰教學</h3>
+                            <p>本課程有以下特色</p>
+                            <ul class="content-item">
+                              <li>瞭解變數的使用方法</li>
+                              <li>學習並操作 DOM</li>
+                              <li>學習基本數學運算方法</li>
+                              <li>套件的操作及運用</li>
+                            </ul>                  
+                        </li>
+                    </ul>
+        <div class="table">
+             <table>
+                <tr class="title">
+                    <th class="o">項目</th>
+                    <th>Hex School線上課程</th>
+                    <th>一般線上課程</th>
+                    <th>實體課程</th>
+                </tr>
+                <tr>
+            <td class="price">費用</td>
+            <td class="pricelow">較低</td>
+            <td class="pricelow">較低</td>
+            <td>較高</td>
+                </tr>
+                <tr>
+            <td class="effort">學習效果</td>
+            <td>一般</td>
+            <td class="pricelow">較低</td>
+            <td class="pricelow">很好</td>
+                </tr>
+                <tr>
+            <td class="code">Code review</td>
+            <td class="pricelow">有</td>
+            <td>無</td>
+            <td>不一定</td>
+                </tr>
+                <tr>
+            <td class="update">課程更新速度</td>
+            <td class="pricelow">普通</td>
+            <td class="pricelow">普通</td>
+            <td>較慢</td>
+                </tr>
+                <tr>
+            <td class="review">多次複習</td>
+            <td class="pricelow">可</td>
+            <td class="pricelow">可</td>
+            <td>不可</td>
+                </tr>
+                <tr>
+            <td class="cc">字幕</td>
+            <td>有</td>
+            <td>不一定</td>
+            <td>板書</td>
+                </tr>
+            </table>
+        </div>
+                <div class="content-form">
+                    <h3>對我們的課程有興趣嗎？
+                        歡迎留下您的資訊
+                      </h3>
+                        <form action="index.html">
+                        <textarea name="content" id="" clos="100" rows="10"></textarea>
+                            <div class="box">
+                        <label for="name">姓名 : </label>
+                        <input id="name" type="text" placeholder="請輸入姓名" name="name">
+                        <label  for="tel">電話 : </label>
+                        <input id="tel" type="text" placeholder="請輸入電話" name="tel">
+                        <label for="mail">信箱 : </label>
+                        <input id="mail" type="" placeholder="請輸入信箱" name="mail">
+                        <input type="button" class="switch" value="送出">
+                            </div>
+                        </form>
+                </div>
+                <div class="footer">
+                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png" alt="">
+                    <ul class="info">
+                    <li>聯絡我們: <a href="mailto:hexschool@gmail.com">hexschool@gmail.com</a></li>
+                    <li>電話: <a href="tel:099123456">0999123456</a></li>
+                  </ul>
+                </div>
+                <div class="backtop">
+                    <a href="#"><i class="fa-solid fa-circle-up fa-3x"></i></a>
+                </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="https://kit.fontawesome.com/5335e58a51.js" crossorigin="anonymous"></script>   
+    <script src="js/all.js"></script>
+</body>
+</html>
